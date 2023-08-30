@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: rgb(15, 20, 94);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    width: 70%;
+    height: 550px;
+    max-width: auto;
+    background: white;
+    border-radius: 1.5rem;
+    box-shadow: 0px 0px 20px 10px black;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    z-index: 1000;
+}
+
+.contact {
+    background: white;
+}
+
+.submit-form {
+    background: red;
+}
+
+.first-text {
+    color: rgb(15, 20, 94);
+    padding-left: 20px;
+    padding-top: 15px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.image {
+    height: 300px;
+    width: 300px;
+    margin-left: 4rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+}
+
+
+.social {
+    margin-top: 1rem;
+}
+
+.second-text {
+    margin-left: 1rem;
+    color:  rgb(15, 20, 94);
+    font-weight: bold;
+}
+
+.social-icons {
+    display: flex;
+    list-style: none;
+}
+
+.social-icons i {
+    background: rgb(15, 20, 94);
+    color: white;
+    padding: 5px;
+    border-radius: 0.3rem;
+}
+
+.social ul li {
+    padding-left: 15px;
+    margin-top: 10px;
+}
+
+.social-icons i:hover {
+    background: white;
+    color: rgb(15, 20, 94);
+    transition: 0.5s;
+    transform: scale(1.2);
+    border: solid 1px rgb(15, 20, 94);
+}
+.third-text{
+    font-size: 30px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    padding-top: 5px;
+    color: white;
+}
+.submit-form{
+    background: rgb(15, 20, 94);
+}
+form{
+    padding: 0 50px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.input-box{
+    position: relative;
+    height: 50px;
+    width: 60%;
+    margin: 30px 0;
+}
+.input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 30px;
+    outline: none;
+    padding-left: 10px;
+    color: white;
+    font-size: 20px;
+}
+.input-box label{
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 10px;
+    padding-left: 10px;
+    transform: translateY(-45%);
+    font-weight: bold;
+}
+.input-box .input:focus ~ label,
+.input-box .input:focus ~ label{
+    top: -1px;
+    left: 12px;
+    background:  rgb(15, 20, 94);
+    font-weight: 500;
+    padding: 5px;
+    transition: 0.3s;
+
+}
+.component.active{
+    top: -1px;
+    left: 12px;
+    background:  rgb(15, 20, 94);
+    font-weight: 500;
+    padding: 5px;
+}
+textarea.input{
+    resize: none;
+    height: 150px;
+    overflow: hidden;
+    font-size: 12px;
+    padding-top: 15px;
+}
+.button{
+    position: relative;
+    top: 100px;
+    border: none;
+    border-radius: 1rem;
+    height: 40px;
+    width: 25%;
+    background: white;
+    color:  rgb(15, 20, 94);
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1070px){
+
+    .item{
+        display: grid;
+        grid-template-columns: auto;
+        height: auto;
+    }
+}
